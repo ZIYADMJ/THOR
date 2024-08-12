@@ -2,8 +2,10 @@ import React from "react"
 import Slider from "react-slick"
 import Card from "../../components/Card"
 import { posts } from "../../lib/data"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
-export default function Sweet() {
+export default function Food() {
   const settings = {
     dots: true,
     infinite: true,
@@ -29,17 +31,18 @@ export default function Sweet() {
       },
     ],
   }
+
   return (
-    <div className="max-w-6xl w-full mx-auto shadow-lg rounded-lg overflow-hidden">
+    <div className="bg-zinc-100 max-w-7xl w-full mx-auto shadow-lg rounded-lg overflow-hidden">
       <div className="bg-cover bg-center w-full h-full flex items-center justify-center">
         <div className="bg-white bg-opacity-50 p-6 rounded-lg w-2/3 h-1/2">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-800 mb-6">
-              Moroccan Sweets
+              Moroccan Sweet
             </h1>
           </div>
           <p className="text-gray-600 leading-relaxed">
-            Moroccan sweets, or <strong>"Halwa"</strong>are a delectable part of
+          Moroccan sweets, or <strong>"Halwa"</strong>are a delectable part of
             Morocco's rich culinary heritage. These confections are more than
             just desserts; they are a blend of history, culture, and flavors
             that have been passed down through generations. Each sweet treat
@@ -49,13 +52,13 @@ export default function Sweet() {
         </div>
       </div>
       <br />
-      <div className="w-full">
+      <div className="w-50">
         <Slider {...settings}>
           {posts
             ?.filter((post) => post.type === "Sweet")
             .map((post) => (
+              <div key={post.id} className="px-1"> 
               <Card
-                key={post.id}
                 title={post.title}
                 imageUrl={post.imageUrl}
                 content={post.content}
@@ -63,6 +66,7 @@ export default function Sweet() {
                 date={post.date}
                 author={post.author}
               />
+            </div>
             ))}
         </Slider>
       </div>

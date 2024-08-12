@@ -33,7 +33,7 @@ export default function Food() {
   }
 
   return (
-    <div className="max-w-6xl w-full mx-auto shadow-lg rounded-lg overflow-hidden">
+    <div className="bg-zinc-100 max-w-7xl w-full mx-auto shadow-lg rounded-lg overflow-hidden">
       <div className="bg-cover bg-center w-full h-full flex items-center justify-center">
         <div className="bg-white bg-opacity-50 p-6 rounded-lg w-2/3 h-1/2">
           <div className="text-center">
@@ -56,13 +56,13 @@ export default function Food() {
         </div>
       </div>
       <br />
-      <div className="w-full">
+      <div className="w-full ">
         <Slider {...settings}>
           {posts
             ?.filter((post) => post.type === "Food")
             .map((post) => (
+              <div key={post.id} className="px-1"> 
               <Card
-                key={post.id}
                 title={post.title}
                 imageUrl={post.imageUrl}
                 content={post.content}
@@ -70,6 +70,7 @@ export default function Food() {
                 date={post.date}
                 author={post.author}
               />
+            </div>
             ))}
         </Slider>
       </div>
