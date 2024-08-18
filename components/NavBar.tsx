@@ -15,10 +15,10 @@ export default function NavBar() {
             </Link>
           </li>
           <li className="p-3 xl:p-6">
-            <Link href="moroccan-food">Moroccan Food</Link>
+            <Link href="moroccan-food">Moroccan Dishes</Link>
           </li>
           <li className="p-3 xl:p-6">
-            <Link href="/moroccan-sweet">Moroccan Sweets</Link>
+            <Link href="">Service</Link>
           </li>
           <li className="p-3 xl:p-6">
             <Link href="/about">
@@ -27,7 +27,7 @@ export default function NavBar() {
           </li>
           <li className="p-3 xl:p-6">
             <Link href="/contact">
-              <span>Contacts</span>
+              <span>Contact</span>
             </Link>
           </li>
         </ul>
@@ -60,7 +60,7 @@ export default function NavBar() {
             </li>
             <li className="p-1">
               <Link
-                href=""
+                href="https://www.facebook.com/ziyad.mjilla/"
                 className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
               >
                 <svg
@@ -83,7 +83,7 @@ export default function NavBar() {
             </li>
             <li className="p-1">
               <Link
-                href=""
+                href="https://www.linkedin.com/in/ziyad-mjilla/"
                 className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
               >
                 <svg
@@ -106,7 +106,7 @@ export default function NavBar() {
             </li>
             <li className="p-1">
               <Link
-                href=""
+                href="https://www.instagram.com/mj_ziyad/"
                 className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
               >
                 <svg

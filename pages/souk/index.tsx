@@ -11,14 +11,21 @@ export default function SoukDor() {
             </h1>
           </div>
 
-          <div className="flex pt-14 ">
+          <div className="flex pt-15 ">
             <span className="text-wrap leading-relaxed bg-transparent text-center font-semibold">
-              Bienvenue chez <strong>Thor Kitchen</strong>, un restaurant où
-              chaque repas est une aventure divine. Situé au cœur de la ville,
-              <strong>Thor Kitchen</strong> offre une ambiance chaleureuse et
-              accueillante, inspirée des légendes nordiques. Les murs sont ornés
-              de fresques représentant les mythes de Thor, le dieu du tonnerre,
-              créant une atmosphère épique et invitante.
+              <strong>THOR KITCHEN</strong> welcomes you to a universe where the
+              richness of Moroccan cuisine meets Nordic epic. Located in the
+              heart of the medina, our restaurant offers a unique culinary
+              experience that skillfully blends traditional Moroccan flavors
+              with a bold Scandinavian touch. In a setting that combines
+              Moroccan zellige tilework and Nordic motifs, our talented chef
+              revisits classics such as tajine and couscous, adding surprising
+              Nordic ingredients. Savor our specialty, the "Thor's Tajine," a
+              savory mix of lamb, prunes, and spices, enhanced with a touch of
+              Nordic berries. Whether for a family meal or a romantic dinner,{" "}
+              <strong>THOR KITCHEN</strong>
+              promises an unforgettable gastronomic journey between Morocco and
+              the Northern lands.
             </span>
           </div>
         </div>

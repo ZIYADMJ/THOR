@@ -42,7 +42,7 @@ export default function Food() {
             </h1>
           </div>
           <p className="text-gray-600 leading-relaxed">
-          Moroccan sweets, or <strong>"Halwa"</strong>are a delectable part of
+            Moroccan sweets, or <strong>"Halwa"</strong>are a delectable part of
             Morocco's rich culinary heritage. These confections are more than
             just desserts; they are a blend of history, culture, and flavors
             that have been passed down through generations. Each sweet treat
@@ -57,16 +57,16 @@ export default function Food() {
           {posts
             ?.filter((post) => post.type === "Sweet")
             .map((post) => (
-              <div key={post.id} className="px-1"> 
-              <Card
-                title={post.title}
-                imageUrl={post.imageUrl}
-                content={post.content}
-                webUrl={post.webUrl}
-                date={post.date}
-                author={post.author}
-              />
-            </div>
+              <div key={post.id} className="px-1">
+                <Card
+                  title={post.title}
+                  imageUrl={post.imageUrl}
+                  content={post.content}
+                  webUrl={post.webUrl}
+                  date={post.date}
+                  author={post.author}
+                />
+              </div>
             ))}
         </Slider>
       </div>
