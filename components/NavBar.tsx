@@ -18,7 +18,7 @@ export default function NavBar() {
             <Link href="moroccan-food">Moroccan Dishes</Link>
           </li>
           <li className="p-3 xl:p-6">
-            <Link href="">Service</Link>
+            <Link href="/menu">Menu</Link>
           </li>
           <li className="p-3 xl:p-6">
             <Link href="/about">
