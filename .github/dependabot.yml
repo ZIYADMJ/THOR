@@ -6,4 +6,3 @@ updates:
       interval: "daily"
     target-branch: "main"
     versioning-strategy: increase
-    allow: *
