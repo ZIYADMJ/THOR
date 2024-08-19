@@ -33,7 +33,8 @@ export default function Food() {
   }
 
   return (
-    <div className="bg-zinc-100 max-w-7xl w-full mx-auto shadow-lg rounded-lg overflow-hidden">
+    <div className="bg-zinc-200 max-w-7xl w-full mx-auto shadow-lg rounded-lg overflow-hidden">
+      <br />
       <div className="bg-cover bg-center w-full h-full flex items-center justify-center">
         <div className="bg-white bg-opacity-50 p-6 rounded-lg w-2/3 h-1/2">
           <div className="text-center">
@@ -74,6 +75,7 @@ export default function Food() {
             ))}
         </Slider>
       </div>
+      <br />
       <div className="bg-cover bg-center w-full h-full flex items-center justify-center">
         <div className="bg-white bg-opacity-50 p-6 rounded-lg w-2/3 h-1/2">
           <div className="text-center">
@@ -110,6 +112,7 @@ export default function Food() {
             ))}
         </Slider>
       </div>
+      <br />
       <div className="bg-cover bg-center w-full h-full flex items-center justify-center">
         <div className="bg-white bg-opacity-50 p-6 rounded-lg w-2/3 h-1/2">
           <div className="text-center">
@@ -147,6 +150,7 @@ export default function Food() {
               </div>
             ))}
         </Slider>
+        <br />
       </div>
     </div>
   )
