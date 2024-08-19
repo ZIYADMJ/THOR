@@ -10,45 +10,42 @@ export default function Footer() {
             <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
               THOR KITCHEN
             </h6>
-            <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
+            <p>Welcome to your restaurant</p>
           </div>
           {/* <!-- Products section --> */}
           <div className="">
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-              Products
+              TEAM
             </h6>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Angular</a>
+              <a className="text-neutral-600 dark:text-neutral-200">
+                Team For Dishes
+              </a>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">React</a>
+              <a className="text-neutral-600 dark:text-neutral-200">
+                Team For Desserts
+              </a>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Vue</a>
-            </p>
-            <p>
-              <a className="text-neutral-600 dark:text-neutral-200">Laravel</a>
+              <a className="text-neutral-600 dark:text-neutral-200">
+                Team For Drinks
+              </a>
             </p>
           </div>
           {/* <!-- Useful links section --> */}
           <div className="">
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-              Useful links
+              MENU
             </h6>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Pricing</a>
+              <a className="text-neutral-600 dark:text-neutral-200">Dishes</a>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Settings</a>
+              <a className="text-neutral-600 dark:text-neutral-200">Plats</a>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Orders</a>
-            </p>
-            <p>
-              <a className="text-neutral-600 dark:text-neutral-200">Help</a>
+              <a className="text-neutral-600 dark:text-neutral-200">Drinks</a>
             </p>
           </div>
           {/* <!-- Contact section --> */}
