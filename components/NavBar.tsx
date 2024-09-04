@@ -9,13 +9,8 @@ export default function NavBar() {
       </div>
       <div className="header-links font-bold  lg:text-lg">
         <ul className="flex ml-4 xl:ml-8 mr-auto">
-          <li className="p-3 xl:p-6 active">
-            <Link href="/souk">
-              <h1>Thor Kitchen</h1>
-            </Link>
-          </li>
           <li className="p-3 xl:p-6">
-            <Link href="moroccan-food">Moroccan Dishes</Link>
+            <Link href="/Thor">Home</Link>
           </li>
           <li className="p-3 xl:p-6">
             <Link href="/menu">Menu</Link>

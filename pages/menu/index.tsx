@@ -1,11 +1,13 @@
 import Head from "next/head"
 import { useState } from "react"
+import Image from "next/image"
 
 type MenuItem = {
   id: number
   name: string
   price: string
   description: string
+  imageUrl: string
 }
 
 type MenuCategory = "food" | "sweet" | "drinks"
@@ -21,115 +23,70 @@ const menuItems: MenuItems = {
       name: "Tajine de Poulet aux Olives",
       price: "160DH",
       description: "Poulet mijoté avec des olives et citrons confits",
+      imageUrl: "/img/tajine-poulet.jpeg",
     },
     {
       id: 2,
-      name: "Couscous Royal",
-      price: "200DH",
-      description: "Semoule, légumes, agneau, poulet et merguez",
+      name: "Tajine de Poulet aux Olives",
+      price: "160DH",
+      description: "Poulet mijoté avec des olives et citrons confits",
+      imageUrl: "/img/tajine-poulet.jpeg",
     },
     {
       id: 3,
-      name: "Pastilla au Pigeon",
-      price: "180DH",
-      description: "Feuilleté sucré-salé farci au pigeon et aux amandes",
+      name: "Tajine de Poulet aux Olives",
+      price: "160DH",
+      description: "Poulet mijoté avec des olives et citrons confits",
+      imageUrl: "/img/tajine-poulet.jpeg",
     },
-    {
-      id: 4,
-      name: "Méchoui d'Agneau",
-      price: "220DH",
-      description: "Agneau rôti aux épices marocaines",
-    },
-    {
-      id: 5,
-      name: "Harira",
-      price: "100DH",
-      description:
-        "Soupe traditionnelle aux lentilles, pois chiches et tomates",
-    },
-    {
-      id: 6,
-      name: "Rfissa",
-      price: "170DH",
-      description: "Poulet effiloché sur un lit de msemen aux lentilles",
-    },
+    // ... other food items
   ],
   sweet: [
     {
-      id: 7,
+      id: 1,
       name: "Corne de Gazelle",
       price: "50DH",
       description: "Pâtisserie en forme de croissant fourrée aux amandes",
+      imageUrl: "/img/kaab-el-ghzal.jpg",
     },
     {
-      id: 8,
-      name: "Chebakia",
-      price: "40DH",
-      description: "Pâtisserie en forme de fleur, frite et enrobée de miel",
-    },
-    {
-      id: 9,
-      name: "M'hanncha",
-      price: "60DH",
-      description: "Gâteau roulé aux amandes en forme de serpentin",
-    },
-    {
-      id: 10,
-      name: "Sfenj",
-      price: "30DH",
-      description: "Beignet traditionnel marocain",
-    },
-    {
-      id: 11,
-      name: "Ghoriba",
-      price: "40DH",
-      description: "Biscuits sablés aux amandes ou aux cacahuètes",
-    },
-    {
-      id: 12,
-      name: "Halwa Chebakia",
+      id: 2,
+      name: "Corne de Gazelle",
       price: "50DH",
-      description:
-        "Pâtisserie en nid d'abeille au miel et aux graines de sésame",
+      description: "Pâtisserie en forme de croissant fourrée aux amandes",
+      imageUrl: "/img/kaab-el-ghzal.jpg",
+    },
+    {
+      id: 3,
+      name: "Corne de Gazelle",
+      price: "50DH",
+      description: "Pâtisserie en forme de croissant fourrée aux amandes",
+      imageUrl: "/img/kaab-el-ghzal.jpg",
     },
   ],
   drinks: [
     {
-      id: 13,
+      id: 1,
       name: "Thé à la Menthe",
       price: "30DH",
       description: "Thé vert avec menthe fraîche et sucre",
+      imageUrl: "/img/tea.jpg",
     },
     {
-      id: 14,
-      name: "Jus d'Orange Frais",
-      price: "40DH",
-      description: "Pressé à la minute avec des oranges marocaines",
-    },
-    {
-      id: 15,
-      name: "Café aux Épices",
+      id: 2,
+      name: "Thé à la Menthe",
       price: "30DH",
-      description: "Café aromatisé à la cannelle et au safran",
+      description: "Thé vert avec menthe fraîche et sucre",
+      imageUrl: "/img/tea.jpg",
     },
     {
-      id: 16,
-      name: "Smoothie à l'Avocat",
-      price: "50DH",
-      description: "Boisson crémeuse à base d'avocat, lait et miel",
-    },
-    {
-      id: 17,
-      name: "Limonade à la Fleur d'Oranger",
-      price: "40DH",
-      description: "Limonade maison parfumée à la fleur d'oranger",
-    },
-    {
-      id: 18,
-      name: "Zerraq",
+      id: 3,
+      name: "Thé à la Menthe",
       price: "30DH",
-      description: "Boisson rafraîchissante à base de lait fermenté",
+      description: "Thé vert avec menthe fraîche et sucre",
+      imageUrl: "/img/tea.jpg",
     },
+    // ... other drink items
   ],
 }
 
@@ -137,7 +94,7 @@ export default function Menu() {
   const [activeCategory, setActiveCategory] = useState<MenuCategory>("food")
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 bg-zinc-50 rounded-3xl">
       <main className="min-h-screen py-16">
         <h1 className="text-4xl font-bold text-center mb-12">Our Menu</h1>
 
@@ -163,6 +120,15 @@ export default function Menu() {
               key={item.id}
               className="border border-gray-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow"
             >
+              <div className="mb-4">
+                <Image
+                  src={item.imageUrl}
+                  alt={item.name}
+                  width={300}
+                  height={200}
+                  className="rounded-lg"
+                />
+              </div>
               <h2 className="text-xl font-semibold mb-2">{item.name}</h2>
               <p className="text-orange-400 font-bold mb-4">{item.price}</p>
               <p className="text-gray-600">{item.description}</p>
